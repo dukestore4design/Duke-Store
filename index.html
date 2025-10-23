@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duke - Designer & Creative Portfolio</title>
+    <meta name="description" content="Duke - Designer & Creative specializing in banners, posters, and digital designs. Explore my portfolio of work for YouTubers and Instagram stars.">
+    <link rel="icon" type="image/x-icon" href="/ico.ico">
+    <meta name="author" content="Duke">
+    
+    <meta property="og:title" content="Duke - Designer & Creative Portfolio">
+    <meta property="og:description" content="Duke - Designer & Creative specializing in banners, posters, and digital designs. Explore my portfolio of work for YouTubers and Instagram stars.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Duke</a>
+                <div class="nav-links">
+                    <a href="#work" class="nav-link">Work</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn btn-primary">Hire Me</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="badge">Designer / Developer</span>
+                    <h1 class="hero-title">I Am Duke</h1>
+                    <p class="hero-description">
+                        I Build This Website To ShowCase All My Designs In One Place.
+                    </p>
+                    <a href="#work" class="btn btn-hero">See My Work</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="pfp.png" alt="Duke Profile" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-description">A Design For ShowCase My Designs</p>
+            </div>
+            
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-card-image">
+                        <img src="anime.png" alt="Anime Designs" onerror="this.style.display='none'">
+                    </div>
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Anime Designs</h3>
+                        <p class="work-card-description">Anime Design For (X - Youtube - Discord).</p>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-card-image">
+                        <img src="discord.png" alt="Discord Design" onerror="this.style.display='none'">
+                    </div>
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Discord Design</h3>
+                        <p class="work-card-description">Discord Designs For (Shop - Store - Community) Servers.</p>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-card-image">
+                        <img src="post.png" alt="Poster Design" onerror="this.style.display='none'">
+                    </div>
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Poster Design</h3>
+                        <p class="work-card-description">Clean Design For A Customer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-intro">
+                    I Am A Designer Who Work On A Different Fields.
+                </p>
+                
+                <ul class="about-list">
+                    <li>
+                        <span class="highlight">Designs:</span> Banner, Poster, Pfp, Other Design
+                    </li>
+                    <li>
+                        <span class="highlight">Tools:</span> Adobe Photoshop, Adobe Illustrator, Adobe After Effects
+                    </li>
+                </ul>
+
+                <div class="stats-card">
+                    <h3 class="stats-title">Quick Stats</h3>
+                    <div class="stats-content">
+                        <p>
+                            <span class="highlight">70+ projects</span> Design For Youtubers And Instagram Stars.
+                        </p>
+                        <p>
+                            <span class="highlight">3 years</span> designing delightful products.
+                        </p>
+                        <p>
+                            Available for <span class="highlight">freelance</span> and <span class="highlight">full‑time</span> work.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-hero">Let's work together</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <h2 class="section-title center">Contact</h2>
+                
+                <form id="contactForm" class="contact-form" >
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="name" 
+                            class="form-input" 
+                            placeholder="Name" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            class="form-input" 
+                            placeholder="Email" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea 
+                            id="message" 
+                            class="form-textarea" 
+                            placeholder="Message" 
+                            rows="6" 
+                            required
+                        ></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <strong class="toast-title"></strong>
+            <p class="toast-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
